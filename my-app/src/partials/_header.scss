@@ -1,0 +1,15 @@
+header {
+
+  background: $bg_header;
+  // debug
+  height: 200px;
+
+
+  .container {
+    width: 1200px;
+    margin: auto;
+    // debug
+    height: 100%;
+    background-color: pink;
+  }
+}
