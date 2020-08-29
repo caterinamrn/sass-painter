@@ -10,6 +10,48 @@ header {
     margin: auto;
     // debug
     height: 100%;
-    background-color: pink;
+    // background-color: pink;
   }
+  #nav_contacts{
+    height: 30px;
+    font-size: 12px;
+    padding-top: 7px;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      li {
+        margin-left: 25px;
+        line-height: 20px;
+        a {
+          color: #989898;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            color: white;
+          }
+        }
+      }
+    }
+
+  }
+  #nav_principale {
+    height: 50px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 100%;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+      }
+    }
+  }
+
 }

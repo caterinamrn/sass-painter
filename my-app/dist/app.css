@@ -13,6 +13,53 @@ header .container {
   width: 1200px;
   margin: auto;
   height: 100%;
-  background-color: pink;
+}
+
+header #nav_contacts {
+  height: 30px;
+  font-size: 12px;
+  padding-top: 7px;
+}
+
+header #nav_contacts ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+header #nav_contacts ul li {
+  margin-left: 25px;
+  line-height: 20px;
+}
+
+header #nav_contacts ul li a {
+  color: #989898;
+  text-decoration: none;
+}
+
+header #nav_contacts ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+header #nav_principale {
+  height: 50px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+}
+
+header #nav_principale ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+header #nav_principale ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
