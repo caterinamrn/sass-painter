@@ -1,5 +1,143 @@
 main {
-  div#jumbotron {
-    // background-image: url(imgs/hero-painteressentials-7.jpg);
+  section#jumbotron {
+    // background-image: url("../imgs/hero-painteressentials-7.jpg");
+    // debug
+    background-color: #1d2224;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    div.info {
+      width: calc(100% * 2 /5 );
+      line-height: 1.2;
+      h1 {
+        font-size: 200%;
+      }
+      h2 {
+        padding: 10px 0;
+
+      }
+      ul {
+        line-height: 1.5;
+        list-style: none;
+        span {
+          color: grey;
+          padding-right: 6px;
+          font-size: bold;
+        }
+      }
+      a.downloadbtn {
+        margin-top: 20px;
+        display: inline-block;
+        background-color: #666;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        div {
+          display:inline-block;
+        }
+        .download {
+          padding-right: 10px;
+          border-right: solid white 1px;
+        }
+      }
+    }
+    div.prize {
+      width: 33%;
+      margin: 0 20px 0 10px;
+      padding:15px 20px 15px 30px;
+      background: black;
+      .offert {
+        background-color: #CC397F;
+        color: white;
+        font-size: 1em;
+        width: 80px;
+        padding: 7px;
+        margin-bottom: 10px;
+      }
+      .oldprize {
+        font-size: 18px;
+        color: #acacac;
+        text-decoration: line-through;
+
+      }
+      .newprize {
+        margin-bottom: 7px;
+        font-size: 26px;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+      .download{
+        color: #666;
+        font-size: 14px;
+      }
+      .buyBtn {
+        display: inline-block;
+        background-color: #009cff;
+        color: white;
+        margin: 17px 0;
+        padding: 7px 10px;
+      }
+      .info_sale {
+        background-color: rgba(255,255,255,.9);
+        margin-top: 15px;
+        color: #2c2c2c;
+        padding: 10px 10px 10px 15px;
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+          span {
+            color: #CC397F;
+            font-weight: bold;
+          }
+          margin-bottom: 10px;
+        }
+        a {
+          color: #009cff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    span.author {
+      position: absolute;
+      left:100px;
+      bottom: 10px;
+    }
+  }
+}
+// subnav
+
+#nav_page {
+  height: 65px;
+
+  background-color: #E6E6E6;
+  ul {
+    height: 100%;
+    width: 1200px;
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    li{
+      font-size: 18px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #555;
+    }
+  }
+}
+#description {
+  // background-image: url("../images/bcksection2.jpg");
+  .starting {
+    color: white;
   }
 }

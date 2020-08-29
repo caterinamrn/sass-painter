@@ -23,7 +23,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "FortAwesome/Font-Awesome": "*"
+    "FortAwesome/Font-Awesome": "*",
+    "font-awesome": "^4.7.0"
   }
 }
