@@ -3046,6 +3046,7 @@ header #nav_contacts {
   height: 30px;
   font-size: 12px;
   padding-top: 7px;
+  margin-bottom: 7px;
 }
 header #nav_contacts ul {
   display: flex;
@@ -3064,11 +3065,21 @@ header #nav_contacts ul li a:hover {
   text-decoration: underline;
   color: white;
 }
+header #nav_contacts ul li a:hover .dropdown-content ul {
+  display: block;
+}
 header #nav_principale {
   height: 50px;
   font-size: 14px;
   color: white;
   display: flex;
+}
+header #nav_principale #header-logo {
+  padding: 8px 15px;
+}
+header #nav_principale #header-logo img {
+  width: 90px;
+  height: auto;
 }
 header #nav_principale ul {
   display: flex;
@@ -3078,12 +3089,17 @@ header #nav_principale ul {
 }
 header #nav_principale ul li {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 50px;
+  padding: 0 25px;
 }
-header #nav_principale ul li #header-logo {
-  margin-bottom: 7px;
+header #nav_principale ul li:hover {
+  background-color: #fff;
+  color: #000;
+}
+header #nav_principale ul li h3 {
+  font-weight: 100;
 }
 
 main section#jumbotron {

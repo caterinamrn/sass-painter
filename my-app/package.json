@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.2",
+    "jquery-ui": "^1.12.1",
     "laravel-mix": "^5.0.5",
     "resolve-url-loader": "^3.1.0",
     "sass": "^1.26.10",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "FortAwesome/Font-Awesome": "*",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1"
   }
 }
