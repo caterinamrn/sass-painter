@@ -1,6 +1,6 @@
 main {
   section#jumbotron {
-    // background-image: url("../imgs/hero-painteressentials-7.jpg");
+    background-image: url("../images/hero-painteressentials-7.jpg");
     // debug
     background-color: #1d2224;
 
@@ -21,12 +21,14 @@ main {
 
       }
       ul {
+        margin-top: 25px;
+        margin-bottom: 35px;
         line-height: 1.5;
         list-style: none;
         span {
           color: grey;
           padding-right: 6px;
-          font-size: bold;
+          font-weight: 400;
         }
       }
       a.downloadbtn {
@@ -135,8 +137,11 @@ main {
     }
   }
 }
+
+
 #description {
-  // background-image: url("../images/bcksection2.jpg");
+  height: 200px;
+  background-image: url("../images/bcksection2.jpg");
   .starting {
     color: white;
   }
