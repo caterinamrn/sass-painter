@@ -1,6 +1,7 @@
 main {
   section#jumbotron {
     background-image: url("../images/hero-painteressentials-7.jpg");
+    background-size: cover;
     // debug
     background-color: #1d2224;
 
@@ -13,6 +14,7 @@ main {
     div.info {
       width: calc(100% * 2 /5 );
       line-height: 1.2;
+      margin-right: 20px;
       h1 {
         font-size: 200%;
       }
@@ -23,12 +25,12 @@ main {
       ul {
         margin-top: 25px;
         margin-bottom: 35px;
-        line-height: 1.5;
+        line-height: 1.75;
         list-style: none;
+        font-size: 17px;
         span {
           color: grey;
           padding-right: 6px;
-          font-weight: 400;
         }
       }
       a.downloadbtn {
@@ -52,6 +54,12 @@ main {
       margin: 0 20px 0 10px;
       padding:15px 20px 15px 30px;
       background: black;
+      position: relative;
+      #garantee {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
       .offert {
         background-color: #CC397F;
         color: white;
@@ -119,23 +127,38 @@ main {
 
 #nav_page {
   height: 65px;
-
   background-color: #E6E6E6;
-  ul {
-    height: 100%;
-    width: 1200px;
-    display:flex;
-    justify-content: space-around;
-    list-style: none;
-    li{
-      font-size: 18px;
+  .container {
+    padding: 0 15px;
+    ul {
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #555;
+      width: 1200px;
+      margin: auto;
+      padding: 0 15px;
+      display:flex;
+      justify-content:flex-start;
+      list-style: none;
+      li {
+        &.active {
+          background-color: #fff;
+          text-align: center;
+          border-bottom: 3px solid #000;
+          a {
+            color: #000;
+          }
+        }
+        a {
+          display: block;
+          font-size: 18px;
+          height: 100%;
+          padding: 17px 24px 18px;
+          color: #555;
+          text-decoration: none;
+        }
+      }
     }
   }
+
 }
 
 

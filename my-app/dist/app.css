@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.container {
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3036,11 +3042,6 @@
 header {
   background: #101010;
 }
-header .container {
-  width: 1200px;
-  margin: auto;
-  height: 100%;
-}
 header #nav_contacts {
   height: 30px;
   font-size: 12px;
@@ -3081,9 +3082,13 @@ header #nav_principale ul li {
   align-items: center;
   height: 50px;
 }
+header #nav_principale ul li #header-logo {
+  margin-bottom: 7px;
+}
 
 main section#jumbotron {
   background-image: url("../images/hero-painteressentials-7.jpg");
+  background-size: cover;
   background-color: #1d2224;
   position: relative;
   display: flex;
@@ -3095,6 +3100,7 @@ main section#jumbotron {
 main section#jumbotron div.info {
   width: calc(100% * 2 /5 );
   line-height: 1.2;
+  margin-right: 20px;
 }
 main section#jumbotron div.info h1 {
   font-size: 200%;
@@ -3105,13 +3111,13 @@ main section#jumbotron div.info h2 {
 main section#jumbotron div.info ul {
   margin-top: 25px;
   margin-bottom: 35px;
-  line-height: 1.5;
+  line-height: 1.75;
   list-style: none;
+  font-size: 17px;
 }
 main section#jumbotron div.info ul span {
   color: grey;
   padding-right: 6px;
-  font-weight: 400;
 }
 main section#jumbotron div.info a.downloadbtn {
   margin-top: 20px;
@@ -3133,6 +3139,12 @@ main section#jumbotron div.prize {
   margin: 0 20px 0 10px;
   padding: 15px 20px 15px 30px;
   background: black;
+  position: relative;
+}
+main section#jumbotron div.prize #garantee {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 main section#jumbotron div.prize .offert {
   background-color: #CC397F;
@@ -3198,20 +3210,33 @@ main section#jumbotron span.author {
   height: 65px;
   background-color: #E6E6E6;
 }
-#nav_page ul {
+#nav_page .container {
+  padding: 0 15px;
+}
+#nav_page .container ul {
   height: 100%;
   width: 1200px;
+  margin: auto;
+  padding: 0 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   list-style: none;
 }
-#nav_page ul li {
+#nav_page .container ul li.active {
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+#nav_page .container ul li.active a {
+  color: #000;
+}
+#nav_page .container ul li a {
+  display: block;
   font-size: 18px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 17px 24px 18px;
   color: #555;
+  text-decoration: none;
 }
 
 #description {
